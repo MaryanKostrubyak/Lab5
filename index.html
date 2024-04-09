@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Клікер</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="start-page">
+    <h2>Виберіть складність і колір</h2>
+    <label for="difficulty">Складність:</label>
+    <select id="difficulty">
+      <option value="easy">Easy</option>
+      <option value="medium">Medium</option>
+      <option value="hard">Hard</option>
+    </select><br><br>
+    <label for="color">Колір:</label>
+    <select id="color">
+      <option value="red">Red</option>
+      <option value="blue">Blue</option>
+      <option value="green">Green</option>
+    </select><br><br>
+    <button onclick="startGame()">Start Game</button>
+  </div>
+  <div id="game-page" style="display: none;">
+    <div id="game-container">
+      <div id="square"></div>
+      <div id="score">Рахунок: <span id="score-value">0</span></div>
+      <div id="timer">Часу лишилося: <span id="time-left"></span></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
